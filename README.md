@@ -1,3 +1,7 @@
+# cmogstored-builder
+
+build cmogstored binaries with docker-compose
+
 # BUILD
 
 ```
@@ -9,3 +13,7 @@ cmogsotred.centos5
 cmogsotred.centos6
 cmogsotred.centos7
 ```
+
+# cmogstored
+
+http://bogomips.org/cmogstored/README
