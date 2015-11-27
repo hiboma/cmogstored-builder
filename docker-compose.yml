@@ -1,0 +1,20 @@
+centos5:
+  dockerfile: Dockerfile.centos5
+  build: .
+  command: cp -a /usr/local/src/cmogstored-1.5.0/cmogstored /tmp/cmogsotred.centos5
+  volumes:
+    - .:/tmp:rw
+
+centos6:
+  dockerfile: Dockerfile.centos6
+  build: .
+  command: cp -a /usr/local/src/cmogstored-1.5.0/cmogstored /tmp/cmogsotred.centos6
+  volumes:
+    - .:/tmp:rw
+
+centos7:
+  dockerfile: Dockerfile.centos7
+  build: .
+  command: cp -a /usr/local/src/cmogstored-1.5.0/cmogstored /tmp/cmogsotred.centos7
+  volumes:
+    - .:/tmp:rw
