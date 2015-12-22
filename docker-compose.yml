@@ -18,3 +18,17 @@ centos7:
   command: cp -a /usr/local/src/cmogstored-1.5.0/cmogstored /tmp/cmogstored.centos7
   volumes:
     - .:/tmp:rw
+
+ubuntu1404:
+  dockerfile: Dockerfile.ubuntu1404
+  build: .
+  command: cp -a /usr/local/src/cmogstored-1.5.0/cmogstored /tmp/cmogstored.ubuntu1404
+  volumes:
+    - .:/tmp:rw
+
+ubuntu1504:
+  dockerfile: Dockerfile.ubuntu1504
+  build: .
+  command: cp -a /usr/local/src/cmogstored-1.5.0/cmogstored /tmp/cmogstored.ubuntu1504
+  volumes:
+    - .:/tmp:rw
