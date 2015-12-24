@@ -1,0 +1,10 @@
+FROM ubuntu:14.04
+MAINTAINER hfm.garden@gmail.com
+
+RUN apt update && apt dist-upgrade -qy
+RUN apt-get install -y build-essential wget
+
+RUN wget -O- http://bogomips.org/cmogstored/files/cmogstored-1.5.0.tar.gz | tar xzC /usr/local/src
+
+WORKDIR /usr/local/src/cmogstored-1.5.0
+RUN ./configure && make
