@@ -3,9 +3,9 @@ MAINTAINER hiroyan@gmail.com
 
 RUN yum -y install gcc wget tar make
 
-RUN wget -O- http://bogomips.org/cmogstored/files/cmogstored-1.5.0.tar.gz | tar xz -C /usr/local/src
+RUN wget -O- http://bogomips.org/cmogstored/files/cmogstored-1.6.0.tar.gz | tar xz -C /usr/local/src
 
-WORKDIR /usr/local/src/cmogstored-1.5.0
+WORKDIR /usr/local/src/cmogstored-1.6.0
 RUN ./configure
 RUN make
 
